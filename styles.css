@@ -2,10 +2,10 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: #00162E; /* Cor de fundo original */
-    --fundo-senha: #6A0DAD; /* Cor roxa para fundo da senha */
-    --fundo-texto: #4B0082; /* Cor roxa para fundo do texto */
-    --borda: #9B59B6; /* Cor roxa para borda */
+    --cor-de-fundo: #1A002B;         /* Fundo geral */
+    --fundo-senha: #2E003F;          /* Bloco de senha */
+    --fundo-texto: #3A004F;          /* Bloco de parâmetros */
+    --borda: #A020F0;                /* Roxo (violeta) para bordas e botões */
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -132,22 +132,38 @@ label {
 
 .fraca {
     width: 25%;
-    background-color: #E71B32;
+    background-color: #C71585; /* Rosa escuro */
 }
 
 .media {
-    background-color: #FAF408;
+    background-color: #DA70D6; /* Orquídea */
     width: 50%;
 }
 
 .forte {
-    background-color: #00FF85;
+    background-color: #BA55D3; /* Roxo médio */
     width: 100%;
 }
 
 .parametro-senha-textos {
     display: flex;
     justify-content: space-between;
+}
+
+#gerar-senha {
+    display: block;
+    margin: 32px auto;
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 16px 32px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#gerar-senha:hover {
+    background-color: var(--borda);
 }
 
 @media screen and (min-width: 768px) {
